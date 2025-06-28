@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfqn7ytjjsqun"]
+
+[ext_resource type="Script" uid="uid://b3ekb3qeng6ry" path="res://player_draw.gd" id="1_pq8q7"]
+[ext_resource type="Script" uid="uid://4cgywrg1cuwi" path="res://player_movement.gd" id="2_pyidc"]
+
+[node name="Root" type="Node2D"]
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="Movement" type="Node2D" parent="Player"]
+script = ExtResource("2_pyidc")
+
+[node name="Head" type="Node2D" parent="Player"]
+script = ExtResource("1_pq8q7")
