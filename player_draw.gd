@@ -32,5 +32,5 @@ func _draw():
 	draw_circle(left_pupil_pos, PUPIL_RADIUS, Color(0, 0, 0))
 	draw_circle(right_pupil_pos, PUPIL_RADIUS, Color(0, 0, 0))
 
-func _process(delta):
-	queue_redraw()  # This requests redraw for Godot 4
+func _process(_delta):
+	queue_redraw()
